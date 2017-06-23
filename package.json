@@ -1,0 +1,13 @@
+{
+  "name" : "react-native-circular-menu",
+  "version" : "0.1.0",
+  "description" : "A Ripple menu effect for your react native application",
+  "main" : "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsdom/abab.git"
+  },
+  "keywords" : ["react","native","react-native","menu","circular"],
+  "author" : "cinder92 - Dante Cervantes",
+  "license" : "ISC"
+}
