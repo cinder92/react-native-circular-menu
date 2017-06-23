@@ -46,8 +46,8 @@ render(){
 Circular Menu supports 7 positions, `topLeft`, `topCenter`, `topRight`, `center`, `bottomLeft`, `bottomCenter`, `bottomRight`.
 
 # TODO
-[x] Test in iPhone 
-[] Test in Android
-[] Add animations
+- [x] Test in iPhone 
+- [ ] Test in Android
+- [ ] Add animations
 
 # of coooourse PR are welcome :)
