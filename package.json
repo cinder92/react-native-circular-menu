@@ -5,7 +5,7 @@
   "main" : "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jsdom/abab.git"
+    "url": "git+https://github.com/cinder92/react-native-circular-menu"
   },
   "keywords" : ["react","native","react-native","menu","circular"],
   "author" : "cinder92 - Dante Cervantes",
