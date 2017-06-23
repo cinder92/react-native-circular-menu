@@ -6,6 +6,10 @@ A Ripple menu effect for your react native application
 
 ![example](https://github.com/cinder92/react-native-circular-menu/blob/master/ezgif.com-video-to-gif.gif)
 
+# How to install
+
+`npm i -S react-native-circular-menu` 
+
 # How to use
 
 ```
@@ -15,7 +19,7 @@ import CircularMenu from 'react-native-circular-menu';
 
 render(){
    return(
-      <CircularMenu 
+      <CircularMenu
          items={this._renderItems()}
          closeBtn={this._renderCloseBtn()}
          show={false}
@@ -42,6 +46,3 @@ render(){
 Circular Menu supports 7 positions, `topLeft`, `topCenter`, `topRight`, `center`, `bottomLeft`, `bottomCenter`, `bottomRight`.
 
 # of coooourse PR are welcome :)
-
-
-
