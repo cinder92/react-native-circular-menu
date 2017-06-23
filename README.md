@@ -4,7 +4,7 @@ A Ripple menu effect for your react native application
 
 # Example
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![example](https://github.com/cinder92/react-native-circular-menu/blob/master/ezgif.com-video-to-gif.gif)
 
 # How to use
 
