@@ -2,6 +2,12 @@
 
 A Ripple menu effect for your react native application
 
+[![npm version](https://img.shields.io/npm/v/react-native-firebase.svg?style=flat-square)](https://www.npmjs.com/package/react-native-circular-menu)
+[![NPM downloads](https://img.shields.io/npm/dm/react-native-firebase.svg?style=flat-square)](https://www.npmjs.com/package/react-native-circular-menu)
+[![Package Quality](http://npm.packagequality.com/shield/react-native-firebase.svg?style=flat-square)](http://packagequality.com/#?package=rreact-native-circular-menu)
+[![Donate](https://img.shields.io/badge/Donate-Patreon-green.svg?style=flat-square)](http://paypal.me/dcergo)
+
+
 # Example
 
 ![example](https://github.com/cinder92/react-native-circular-menu/blob/master/ezgif.com-video-to-gif.gif)
