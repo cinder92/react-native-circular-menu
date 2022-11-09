@@ -7,53 +7,73 @@ A Ripple menu effect for your react native application
 [![Package Quality](http://npm.packagequality.com/shield/react-native-circular-menu.svg?style=flat-square)](http://packagequality.com/#?package=react-native-circular-menu)
 [![Donate](https://img.shields.io/badge/Donate-Patreon-green.svg?style=flat-square)](http://paypal.me/dcergo)
 
-
 # Example
 
 ![example](https://github.com/cinder92/react-native-circular-menu/blob/master/ezgif.com-video-to-gif.gif)
 
 # How to install
 
-`npm i -S react-native-circular-menu` 
+`yarn add react-native-circular-menu`
 
 # How to use
 
 ```
+...
 import CircularMenu from 'react-native-circular-menu';
 
-...
+const App = () => {
+  const [show, setState] = useState(false);
 
-render(){
-   return(
+  const renderItems = () => [<Text style={{color: 'green'}}>Menu Item</Text>];
+
+  const renderCloseBtn = () => (
+    <TouchableOpacity
+      onPress={() => {
+        setState(!show);
+      }}>
+      <Text>Close Menu</Text>
+    </TouchableOpacity>
+  );
+
+  return (
+    <View>
+      <StatusBar hidden />
+      <Text onPress={() => setState(!show)}>Open Menu</Text>
       <CircularMenu
-         items={this._renderItems()}
-         closeBtn={this._renderCloseBtn()}
-         show={false}
-         items={[...]}
-         position={"topLeft"}
+        items={renderItems()}
+        closeBtn={renderCloseBtn()}
+        show={show}
+        position={'center'}
+        contentStyle={{backgroundColor: 'transparent'}}
+        closeDelay={250}
+        openDelay={0}
       />
-   )
-}
+    </View>
+  );
 ```
 
 # Props
 
-| Name  | Description | Required |
-| ----- | ------------| -------- |
-| show | Set `true` to show and `false` to hide | yes |
-| color | Change color of ripple effect | no |
-| size  | Change the scale size of circle (default : 20) | no |
-| items | Menu items (array) | yes |
-| position | Change position of animation circle (default : `topLeft`) | no |
-| closeBtn | Receives a component for close button | yes |
+| Name         | Description                                               | Required |
+| ------------ | --------------------------------------------------------- | -------- |
+| show         | Set `true` to show and `false` to hide                    | yes      |
+| color        | Change color of ripple effect                             | no       |
+| size         | Change the scale size of circle (default : 20)            | no       |
+| items        | Menu items (array)                                        | yes      |
+| position     | Change position of animation circle (default : `topLeft`) | no       |
+| closeBtn     | Receives a component for close button                     | yes      |
+| openDelay    | Change delay before the menu opens (default : 250)        | no       |
+| closeDelay   | Change delay before the menu closes (default : 350)       | no       |
+| contentStyle | Style object for the child container                      | no       |
 
 # Positions
 
 Circular Menu supports 7 positions, `topLeft`, `topCenter`, `topRight`, `center`, `bottomLeft`, `bottomCenter`, `bottomRight`.
 
 # TODO
-- [x] Test in iPhone 
-- [ ] Test in Android
+
+- [x] Test in iPhone
+- [x] Test in Android
 - [ ] Add animations
 
 # of coooourse PR are welcome :)
